@@ -45,6 +45,34 @@
             width: 100%;
             bottom: 0;
         }
+
+    form {
+        margin-top: 20px;
+    }
+    form label {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    form select {
+        padding: 5px;
+        font-size: 16px;
+    }
+    form input[type="submit"] {
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -61,10 +89,26 @@
     </header>
     <h1>Products Page</h1>
     <p>Welcome to the products page. Here you can find all our amazing products!</p>
+    
+
+    <form >
+        <label for="product">Choose a product:</label>
+        <select id="product" name="product">
+            <option value="product1">Product 1</option>
+            <option value="product2">Product 2</option>
+            <option value="product3">Product 3</option>
+        </select>
+
+      
+
+
+
+        <input type="submit" value="Submit">
+    </form>
 
 
 
 
 
 </body>
-</html>
+</html> 
